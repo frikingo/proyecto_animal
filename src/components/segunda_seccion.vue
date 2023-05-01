@@ -1,9 +1,4 @@
 <template>
-  {{ $q.screen.xs ? "XS" : "" }}
-  {{ $q.screen.sm ? "SM" : "" }}
-  {{ $q.screen.md ? "MD" : "" }}
-  {{ $q.screen.lg ? "LG" : "" }}
-  {{ $q.screen.xl ? "XL" : "" }}
   <section class="row justify-center">
     <section class="col-lg-6 col-md-6 col-xs-10 col-sm-10">
       <h4 class="text-center">

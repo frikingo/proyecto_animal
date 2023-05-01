@@ -1,10 +1,4 @@
 <template>
-  {{ $q.screen.xs ? "XS" : "" }}
-  {{ $q.screen.sm ? "SM" : "" }}
-  {{ $q.screen.md ? "MD" : "" }}
-  {{ $q.screen.lg ? "LG" : "" }}
-  {{ $q.screen.xl ? "XL" : "" }}
-
   <section class="row justify-center">
     <section class="col-10 col-md-5 col-lg-3 flex flex-center">
       <q-avatar size="300px">

@@ -1,9 +1,4 @@
 <template>
-  {{ $q.screen.xs ? "XS" : "" }}
-  {{ $q.screen.sm ? "SM" : "" }}
-  {{ $q.screen.md ? "MD" : "" }}
-  {{ $q.screen.lg ? "LG" : "" }}
-  {{ $q.screen.xl ? "XL" : "" }}
   <div class="row flex flex-center q-pt-xl">
     <div
       class="col-10 text-center justify-center"

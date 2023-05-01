@@ -1,10 +1,4 @@
 <template>
-  {{ $q.screen.xs ? "XS" : "" }}
-  {{ $q.screen.sm ? "SM" : "" }}
-  {{ $q.screen.md ? "MD" : "" }}
-  {{ $q.screen.lg ? "LG" : "" }}
-  {{ $q.screen.xl ? "XL" : "" }}
-
   <div style="background-color: gainsboro" class="row justify-center q-pb-lg">
     <footer class="col-xs-10 col-sm-3 col-md-3 col-lg-3">
       <div class="row">

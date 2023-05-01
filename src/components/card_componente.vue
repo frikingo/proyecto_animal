@@ -1,9 +1,4 @@
 <template>
-  {{ $q.screen.xs ? "XS" : "" }}
-  {{ $q.screen.sm ? "SM" : "" }}
-  {{ $q.screen.md ? "MD" : "" }}
-  {{ $q.screen.lg ? "LG" : "" }}
-  {{ $q.screen.xl ? "XL" : "" }}
   <div class="row justify-center">
     <div class="col-lg-10 col-md-10 col-sm-10">
       <p :class="`${$q.screen.sm ? 'text-center' : ''}`" class="q-pt-lg">
