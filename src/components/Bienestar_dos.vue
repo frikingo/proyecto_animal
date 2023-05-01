@@ -4,9 +4,10 @@
       <section class="col-10 text-center">
         <h6>Usted puede contactar con nosotros por los siguientes motivos</h6>
         <p>
-          ak va un texto random de varias lineas sobres los animales , son las 5
-          Am y no he dormido pork el texto anterior fue una kk y debe de ser de
-          varias lineas, amalia me esta agitando para quue la lleve a la parada
+          Es importante para nosotros que usted se registren, enviando su correo
+          electronico o siguiendonos en las redes sociales para que esten al
+          tanto de las actividades de la organizacion y si actividad es
+          fundamental para la ayuda de los animales. AYUDENOS SALVARLOS.
         </p>
         <q-btn
           style="background-color: aliceblue; color: rgb(69, 179, 175)"
@@ -27,13 +28,15 @@
             ></q-btn>
 
             <q-card-section>
-              <section class="text-h6">reportar algun perdido</section>
+              <section class="text-h6">Reportar alguna perdida</section>
             </q-card-section>
-            <q-card-section class="q-pt-none">
-              ak va un texto random de varias lineas sobres los animales , son
-              las 5 Am y no he dormido pork el texto anterior fue una kk y debe
-              de ser de varias lineas, amalia me esta agitando para quue la
-              lleve a la parada
+            <q-card-section
+              class="q-pt-none"
+              :style="`${$q.screen.sm ? 'padding-top: 35px' : ''}`"
+            >
+              Si usted o alguna persona allegada a perdido algun animalito puede
+              contactar con nosotros y l@ ayudaremos. Promoxionando atraves de
+              los correos electronicos de las personas que nos siguen.
             </q-card-section>
           </section>
           <section class="col-sm-6 col-md-3">
@@ -43,13 +46,15 @@
               icon="call"
             ></q-btn>
             <q-card-section>
-              <section class="text-h6">reportar algun perdido</section>
+              <section class="text-h6">
+                Reportar algun animal en peligro
+              </section>
             </q-card-section>
             <q-card-section class="q-pt-none">
               ak va un texto random de varias lineas sobres los animales , son
               las 5 Am y no he dormido pork el texto anterior fue una kk y debe
               de ser de varias lineas, amalia me esta agitando para quue la
-              lleve a la parada
+              lleve a la parada.
             </q-card-section>
           </section>
           <section class="col-sm-6 col-md-3">
@@ -60,13 +65,12 @@
             ></q-btn>
 
             <q-card-section>
-              <section class="text-h6">reportar algun perdido</section>
+              <section class="text-h6">Adopcion de un animal</section>
             </q-card-section>
             <q-card-section class="q-pt-none">
-              ak va un texto random de varias lineas sobres los animales , son
-              las 5 Am y no he dormido pork el texto anterior fue una kk y debe
-              de ser de varias lineas, amalia me esta agitando para quue la
-              lleve a la parada
+              Si usted quiere adoptar algun animalito puede contactar con
+              nosotros. en los comentarios ponga el codigo del animalito que
+              desea ayudar.
             </q-card-section>
           </section>
           <section class="col-sm-6 col-md-3">
@@ -76,13 +80,12 @@
               icon="info"
             ></q-btn>
             <q-card-section>
-              <section class="text-h6">reportar algun perdido</section>
+              <section class="text-h6">Pedir informacion</section>
             </q-card-section>
             <q-card-section class="q-pt-none">
-              ak va un texto random de varias lineas sobres los animales , son
-              las 5 Am y no he dormido pork el texto anterior fue una kk y debe
-              de ser de varias lineas, amalia me esta agitando para quue la
-              lleve a la parada
+              Si usted tiene alguna duda o necesita informacion sobre nosotros,
+              puede contactarnos sin ningun problema, en el apartado del
+              comentario haga su pregunta.
             </q-card-section>
           </section>
         </section>

@@ -2,7 +2,7 @@
   <section class="row justify-center q-pb-md">
     <section class="col-lg-6 col-md-6 col-xs-10 col-sm-10">
       <h4 class="text-center">
-        como ayudar a los <span style="color: rgb(69, 179, 175)">animales</span>
+        Como ayudar a los <span style="color: rgb(69, 179, 175)">animales</span>
       </h4>
       <p
         :class="`${$q.screen.xs ? 'text-center' : ''}`"
@@ -22,7 +22,7 @@
           </section>
           <section class="col-12 col-sm-10 col-md-10">
             <h6 :class="`${$q.screen.xs ? 'text-center' : ''}`">
-              alalalalalalalalalalalalalalalal
+              Encuentre el animalito deseado
             </h6>
             <p
               :class="`${$q.screen.xs ? 'text-center' : ''}`"
@@ -45,7 +45,7 @@
           </section>
           <section class="col-12 col-sm-10 col-md-10">
             <h6 :class="`${$q.screen.xs ? 'text-center' : ''}`">
-              alalalalalalalalalalalalalalalal
+              Contacte con nosotros
             </h6>
             <section :class="`${$q.screen.xs ? 'flex flex-center' : ''}`">
               <q-btn
@@ -70,7 +70,7 @@
           </section>
           <section class="col-12 col-sm-10 col-md-10">
             <h6 :class="`${$q.screen.xs ? 'text-center' : ''}`">
-              alalalalalalalalalalalalalalalal
+              Le haremos llegar su solicitud
             </h6>
             <p
               :class="`${$q.screen.xs ? 'text-center' : ''}`"
