@@ -1,6 +1,6 @@
 <template>
   <div style="background-color: gainsboro" class="row justify-center q-pb-lg">
-    <footer class="col-xs-10 col-sm-3 col-md-3 col-lg-3">
+    <footer class="col-xs-10 col-sm-3 col-md-3 col-lg-3 q-pt-md">
       <div class="row">
         <div class="col-12 q-pt-lg">
           <img

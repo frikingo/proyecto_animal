@@ -1,5 +1,5 @@
 <template>
-  <section class="row justify-center">
+  <section class="row justify-center q-pb-md">
     <section class="col-lg-6 col-md-6 col-xs-10 col-sm-10">
       <h4 class="text-center">
         como ayudar a los <span style="color: rgb(69, 179, 175)">animales</span>

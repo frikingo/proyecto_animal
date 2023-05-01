@@ -1,5 +1,5 @@
 <template>
-  <div class="row flex flex-center q-pt-xl">
+  <div class="row flex flex-center q-pt-xl q-pb-lg">
     <div
       class="col-10 text-center justify-center"
       style="
