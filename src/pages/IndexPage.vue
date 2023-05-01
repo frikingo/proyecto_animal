@@ -47,7 +47,7 @@
               label="Sobre Nosotros"
               class="q-mr-md distancia"
               color="grey-1"
-              @click="goToSection1('section1')"
+              @click="goToSobre1('sobre1')"
             />
 
             <q-btn
@@ -56,7 +56,7 @@
               label="Lista de Animales"
               class="q-mr-md distancia"
               color="grey-1"
-              @click="goToSection3('section3')"
+              @click="goToCard1('card1')"
             />
 
             <q-btn
@@ -107,10 +107,10 @@
       </div>
     </div>
 
-    <sobre_nosotros id="section1" />
+    <sobre_nosotros id="sobre1" />
     <segunda_seccion />
     <Bienestar_dos />
-    <card_componente />
+    <card_componente id="card1" />
     <div_verde />
     <footer_ok />
     <final_footer />
@@ -259,8 +259,12 @@ function goToInicio(id) {
   const inicio = document.getElementById(`inicio`);
   if (inicio) inicio.scrollIntoView({ behavior: "smooth", block: "start" });
 }
-function goToSection1(id) {
-  const section1 = document.getElementById("section1");
-  if (section1) section1.scrollIntoView({ behavior: "smooth", block: "start" });
+function goToSobre1(id) {
+  const sobre1 = document.getElementById("sobre1");
+  if (sobre1) sobre1.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+function goToCard1(id) {
+  const card1 = document.getElementById("card1");
+  if (card1) card1.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 </script>
