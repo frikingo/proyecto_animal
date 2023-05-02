@@ -53,10 +53,10 @@
             <q-btn
               rounded
               flat
-              label="Lista de Animales"
+              label="Lista de animales"
               class="q-mr-md distancia"
               color="grey-1"
-              @click="goToCard1('card1')"
+              @click="goToLista1('lista1')"
             />
 
             <q-btn
@@ -65,7 +65,7 @@
               label="Contactenos"
               class="bg-grey-1 distancia"
               color="secondary "
-              @click="goToSection5('section5')"
+              @click="goToContac1('contac1')"
             />
           </div>
         </div>
@@ -110,9 +110,9 @@
     <sobre_nosotros id="sobre1" />
     <segunda_seccion />
     <Bienestar_dos />
-    <card_componente id="card1" />
+    <card_componente id="lista1" />
     <div_verde />
-    <footer_ok />
+    <footer_ok id="contac1" />
     <final_footer />
   </q-layout>
 </template>
@@ -263,8 +263,14 @@ function goToSobre1(id) {
   const sobre1 = document.getElementById("sobre1");
   if (sobre1) sobre1.scrollIntoView({ behavior: "smooth", block: "start" });
 }
-function goToCard1(id) {
-  const card1 = document.getElementById("card1");
-  if (card1) card1.scrollIntoView({ behavior: "smooth", block: "start" });
+
+function goToContac1(id) {
+  const contac1 = document.getElementById(`contac1`);
+  if (contac1) contac1.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+function goTolista1(id) {
+  const lista1 = document.getElementById(`lista1`);
+  if (lista1) lista1.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 </script>
