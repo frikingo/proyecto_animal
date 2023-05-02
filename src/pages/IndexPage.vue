@@ -49,14 +49,13 @@
               color="grey-1"
               @click="goToSobre1('sobre1')"
             />
-
             <q-btn
               rounded
               flat
               label="Lista de animales"
               class="q-mr-md distancia"
               color="grey-1"
-              @click="goToLista1('lista1')"
+              @click="goToLista2('lista2')"
             />
 
             <q-btn
@@ -110,7 +109,7 @@
     <sobre_nosotros id="sobre1" />
     <segunda_seccion />
     <Bienestar_dos />
-    <card_componente id="lista1" />
+    <card_componente id="lista2" />
     <div_verde />
     <footer_ok id="contac1" />
     <final_footer />
@@ -268,9 +267,8 @@ function goToContac1(id) {
   const contac1 = document.getElementById(`contac1`);
   if (contac1) contac1.scrollIntoView({ behavior: "smooth", block: "start" });
 }
-
-function goTolista1(id) {
-  const lista1 = document.getElementById(`lista1`);
-  if (lista1) lista1.scrollIntoView({ behavior: "smooth", block: "start" });
+function goToLista2(id) {
+  const lista2 = document.getElementById(`lista2`);
+  if (lista2) lista2.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 </script>
