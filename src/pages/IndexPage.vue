@@ -55,7 +55,15 @@
               label="Lista de animales"
               class="q-mr-md distancia"
               color="grey-1"
-              @click="goToLista2('lista2')"
+              @click="goToCard('card')"
+            />
+            <q-btn
+              rounded
+              flat
+              label="Galeria"
+              class="q-mr-md distancia"
+              color="grey-1"
+              @click="abrirComponente"
             />
 
             <q-btn
@@ -109,7 +117,7 @@
     <sobre_nosotros id="sobre1" />
     <segunda_seccion />
     <Bienestar_dos />
-    <card_componente id="lista2" />
+    <card_componente id="card" />
     <div_verde />
     <footer_ok id="contac1" />
     <final_footer />
@@ -254,6 +262,14 @@ function openNav() {
 // para cuando toque el boton creado anterior mente con su id realice el scroll hasta el inicio
 //no me pinchan los demas botones, no se por k(queda pendiente)
 
+export default {
+  methods: {
+    abrirComponente() {
+      this.$router.push("/GalPage");
+    },
+  },
+};
+
 function goToInicio(id) {
   const inicio = document.getElementById(`inicio`);
   if (inicio) inicio.scrollIntoView({ behavior: "smooth", block: "start" });
@@ -267,8 +283,8 @@ function goToContac1(id) {
   const contac1 = document.getElementById(`contac1`);
   if (contac1) contac1.scrollIntoView({ behavior: "smooth", block: "start" });
 }
-function goToLista2(id) {
-  const lista2 = document.getElementById(`lista2`);
-  if (lista2) lista2.scrollIntoView({ behavior: "smooth", block: "start" });
+function goToCard(id) {
+  const card = document.getElementById(`card`);
+  if (card) card.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 </script>

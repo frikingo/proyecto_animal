@@ -1,0 +1,79 @@
+<template>
+  <section id="poster">
+    <img src="~assets/img1.jpg" alt="" />
+    <img src="~assets/img2.jpg" alt="" />
+    <img src="~assets/img3.jpg" alt="" />
+  </section>
+  <q-btn
+    rounded
+    flat
+    label="Pagina Principal"
+    class="q-mr-md distancia"
+    color="greed"
+    style="background-color: darkgreen"
+    @click="abrirComponente"
+  />
+</template>
+<style>
+section {
+  display: flex;
+  width: 600px;
+  height: 430px;
+}
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: 0.8;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -o-transition: 0.5s;
+}
+section img:hover {
+  cursor: crosshair;
+  width: 300px;
+  opacity: 1;
+  filter: contrast(150%);
+  -webkit-filter: contrast(150%);
+}
+#poster:hover {
+  box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
+}
+</style>
+
+<script>
+export default {
+  methods: {
+    abrirComponente() {
+      this.$router.push("/");
+    },
+  },
+};
+</script>
+
+<script setup>
+const el = document.getElementById("poster");
+const height = el.clientHeight;
+const width = el.clientWidth;
+el.addEventListener("mousemove", (evt) => {
+  const { layerX, layerY } = evt;
+  const yRotation = ((layerX - width / 2) / width) * 20;
+  const xRotation = ((layerY - height / 2) / height) * 20;
+  const string = `
+perspective(500px)
+scale(1.1)
+rotateX(${xRotation}deg)
+rotateY(${yRotation}deg)`;
+
+  el.style.transform = string;
+});
+el.addEventListener("mouseout", () => {
+  el.style.transform = `
+    perspective(500px)
+    scale(1)
+    rotateX(0)
+    rotateY(0)`;
+});
+</script>
