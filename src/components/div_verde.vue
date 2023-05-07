@@ -1,5 +1,5 @@
 <template>
-  <div class="row flex flex-center q-pt-xl q-pb-lg">
+  <div class="row flex flex-center q-pt-xl q-pb-xl">
     <div
       class="col-10 text-center justify-center"
       style="
@@ -23,7 +23,7 @@
       </div>
       <!--  input com boton dentro    -->
       <div class="row justify-center q-pt-md">
-        <div class="col-7 col-xs-10 col-sm-6 col-md-4 col-lg-4">
+        <div class="col-7 col-xs-10 col-sm-8 col-md-5 col-lg-6">
           <q-input
             color="teal"
             rounded

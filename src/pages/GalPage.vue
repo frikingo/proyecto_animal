@@ -1,9 +1,4 @@
 <template>
-  <section id="poster">
-    <img src="~assets/img1.jpg" alt="" />
-    <img src="~assets/img2.jpg" alt="" />
-    <img src="~assets/img3.jpg" alt="" />
-  </section>
   <q-btn
     rounded
     flat
@@ -13,6 +8,15 @@
     style="background-color: darkgreen"
     @click="abrirComponente"
   />
+  <div class="row">
+    <div class="col-12 flex flex-center" style="padding-top: 350px">
+      <section id="poster">
+        <img src="~assets/img1.jpg" alt="" />
+        <img src="~assets/img2.jpg" alt="" />
+        <img src="~assets/img3.jpg" alt="" />
+      </section>
+    </div>
+  </div>
 </template>
 <style>
 section {
@@ -20,6 +24,7 @@ section {
   width: 600px;
   height: 430px;
 }
+
 section img {
   width: 0px;
   flex-grow: 1;
@@ -31,6 +36,7 @@ section img {
   -ms-transition: 0.5s;
   -o-transition: 0.5s;
 }
+
 section img:hover {
   cursor: crosshair;
   width: 300px;
@@ -38,6 +44,7 @@ section img:hover {
   filter: contrast(150%);
   -webkit-filter: contrast(150%);
 }
+
 #poster:hover {
   box-shadow: 0px 0px 50px rgba(0, 0, 0, 1);
 }
@@ -54,26 +61,30 @@ export default {
 </script>
 
 <script setup>
-const el = document.getElementById("poster");
-const height = el.clientHeight;
-const width = el.clientWidth;
-el.addEventListener("mousemove", (evt) => {
-  const { layerX, layerY } = evt;
-  const yRotation = ((layerX - width / 2) / width) * 20;
-  const xRotation = ((layerY - height / 2) / height) * 20;
-  const string = `
+import { onMounted } from "vue";
+
+onMounted(() => {
+  const el = document.getElementById("poster");
+  const height = el.clientHeight;
+  const width = el.clientWidth;
+  el.addEventListener("mousemove", (evt) => {
+    const { layerX, layerY } = evt;
+    const yRotation = ((layerX - width / 2) / width) * 20;
+    const xRotation = ((layerY - height / 2) / height) * 20;
+    const string = `
 perspective(500px)
 scale(1.1)
 rotateX(${xRotation}deg)
 rotateY(${yRotation}deg)`;
 
-  el.style.transform = string;
-});
-el.addEventListener("mouseout", () => {
-  el.style.transform = `
+    el.style.transform = string;
+  });
+  el.addEventListener("mouseout", () => {
+    el.style.transform = `
     perspective(500px)
     scale(1)
     rotateX(0)
     rotateY(0)`;
+  });
 });
 </script>
