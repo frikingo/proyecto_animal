@@ -3,7 +3,10 @@
     <header>
       <div class="row justify-center">
         <div class="col-12 col-sm-6 col-md-4 nav-me">
-          <img src="~assets/jade.jpg" alt="" />
+          <img
+            src="~assets/IMG_20230421_224415_157-removebg-preview.png"
+            alt=""
+          />
         </div>
         <!-- menu hamburguesa oculto -->
         <q-btn
@@ -118,7 +121,7 @@
     <segunda_seccion />
     <Bienestar_dos />
     <card_componente id="card" />
-    <div_verde />
+    <div_verde id="verde" />
     <footer_ok id="contac1" />
     <final_footer />
   </q-layout>

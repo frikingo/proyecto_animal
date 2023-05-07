@@ -1,20 +1,32 @@
 <template>
-  <q-btn
-    rounded
-    flat
-    label="Pagina Principal"
-    class="q-mr-md distancia"
-    color="greed"
-    style="background-color: darkgreen"
-    @click="abrirComponente"
-  />
-  <div class="row">
-    <div class="col-12 flex flex-center" style="padding-top: 350px">
-      <section id="poster">
+  <div
+    class="row"
+    style="padding-top: 350px; padding-bottom: 270px; background-color: grey"
+  >
+    <div class="col-12 flex flex-center">
+      <section
+        id="poster"
+        :style="`${$q.screen.xs ? ' width: 300px;  height: 230px;' : ''} `"
+      >
         <img src="~assets/img1.jpg" alt="" />
         <img src="~assets/img2.jpg" alt="" />
         <img src="~assets/img3.jpg" alt="" />
       </section>
+    </div>
+
+    <div
+      class="col-12 flex flex-center justify-center"
+      style="padding-top: 50px"
+    >
+      <q-btn
+        rounded
+        flat
+        label="Pagina Principal"
+        class="q-mr-md distancia"
+        color="greed"
+        style="background-color: rgb(69, 179, 175)"
+        @click="abrirComponente"
+      />
     </div>
   </div>
 </template>

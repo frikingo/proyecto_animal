@@ -18,8 +18,8 @@
         </div>
         <div class="col-12 q-pt-lg">
           <img
-            style="width: 120px; height: 70px"
-            src="~assets/jade.jpg"
+            style="width: 140px; height: 50px"
+            src="~assets/IMG_20230421_224415_157-removebg-preview.png"
             alt=""
           />
         </div>
@@ -35,9 +35,11 @@
 
     <footer class="col-xs-10 col-sm-3 col-md-3 col-lg-3 q-pt-lg">
       <div>
-        <p>
-          <span style="font-weight: bolder">Contactenos</span>
-        </p>
+        <div>
+          <p>
+            <span style="font-weight: bolder">Contactenos</span>
+          </p>
+        </div>
         <p>
           <span style="font-weight: bolder; color: gray">Inicio</span>
         </p>
@@ -84,5 +86,9 @@
 <style>
 .espacio {
   padding-left: 5px;
+  cursor: pointer;
+}
+p {
+  cursor: pointer;
 }
 </style>

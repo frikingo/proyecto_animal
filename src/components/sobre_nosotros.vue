@@ -1,19 +1,20 @@
 <template>
-  <section class="row justify-center">
+  <section class="row justify-center q-pb-xl q-pt-xl">
     <section class="col-10 col-md-5 col-lg-3 flex flex-center">
       <q-avatar size="300px">
-        <img src="~assets/ceda.jpg" alt="" />
+        <img src="~assets/Logoprinsipal.png" alt="" />
       </q-avatar>
     </section>
 
-    <section class="col-10 col-md-5 col-lg-7">
+    <section class="col-10 col-md-5 col-lg-7 q-pt-lg">
       <p :class="`${$q.screen.xs || $q.screen.sm ? 'text-center' : ''}`">
-        <span style="color: blue">SOBRE NOSOTROS</span>
+        <span style="color: rgb(69, 179, 175)">SOBRE NOSOTROS</span>
       </p>
       <h4 :class="`${$q.screen.xs || $q.screen.sm ? 'text-center' : ''}`">
         Grupo Animalista <span style="color: rgb(69, 179, 175)">Cubano</span>
       </h4>
       <p
+        class="q-pt-md"
         :class="`${$q.screen.xs || $q.screen.sm ? 'text-center' : ''}`"
         :style="`${$q.screen.xs ? 'font-size: 14px' : ''}`"
       >
@@ -24,6 +25,13 @@
         que la mascota lleve collar con los teléfonos de su dueño. Que nunca la
         dejen salir sola o sin supervisión, que la mascota esté debidamente
         esterilizada para evitar que se pierda detrás de un
+      </p>
+      <br />
+      <p
+        :class="`${$q.screen.xs || $q.screen.sm ? 'text-center' : ''}`"
+        :style="`${$q.screen.xs ? 'font-size: 14px' : ''}`"
+      >
+        Esta linda perrita de tan solo un añito se escapó de su casa, vive por
       </p>
     </section>
   </section>

@@ -3,12 +3,17 @@
     <section class="row justify-center">
       <section class="col-10 text-center">
         <h6>Usted puede contactar con nosotros por los siguientes motivos</h6>
-        <p>
-          Es importante para nosotros que usted se registren, enviando su correo
-          electronico o siguiendonos en las redes sociales para que esten al
-          tanto de las actividades de la organizacion y si actividad es
-          fundamental para la ayuda de los animales. AYUDENOS SALVARLOS.
-        </p>
+        <div class="row justify-center">
+          <div class="col-8">
+            <p>
+              Es importante para nosotros que usted se registren, enviando su
+              correo electronico o siguiendonos en las redes sociales para que
+              esten al tanto de las actividades de la organizacion y si
+              actividad es fundamental para la ayuda de los animales. AYUDENOS
+              SALVARLOS.
+            </p>
+          </div>
+        </div>
         <q-btn
           style="background-color: aliceblue; color: rgb(69, 179, 175)"
           rounded

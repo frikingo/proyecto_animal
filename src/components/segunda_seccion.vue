@@ -1,7 +1,10 @@
 <template>
   <section class="row justify-center q-pb-md">
     <section class="col-lg-6 col-md-6 col-xs-10 col-sm-10">
-      <h4 class="text-center">
+      <p :class="`${$q.screen.xs || $q.screen.sm ? 'text-center' : ''}`">
+        <span style="color: rgb(69, 179, 175)">Como funciona</span>
+      </p>
+      <h4 :class="`${$q.screen.xs || $q.screen.sm ? 'text-center' : ''}`">
         Como ayudar a los <span style="color: rgb(69, 179, 175)">animales</span>
       </h4>
       <p
