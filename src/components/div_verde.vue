@@ -39,6 +39,7 @@
             <!--  boton del inpunt    -->
             <template v-slot:append>
               <q-btn
+                unelevated
                 rounded
                 style="
                   color: white;

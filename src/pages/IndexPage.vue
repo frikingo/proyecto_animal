@@ -58,7 +58,7 @@
               label="Lista de animales"
               class="q-mr-md distancia"
               color="grey-1"
-              @click="goToCard('card')"
+              @click="goToAni('ani')"
             />
             <q-btn
               rounded
@@ -120,7 +120,7 @@
     <sobre_nosotros id="sobre1" />
     <segunda_seccion />
     <Bienestar_dos />
-    <card_componente id="card" />
+    <card_componente id="ani" />
     <div_verde id="verde" />
     <footer_ok id="contac1" />
     <final_footer />
@@ -286,8 +286,8 @@ function goToContac1(id) {
   const contac1 = document.getElementById(`contac1`);
   if (contac1) contac1.scrollIntoView({ behavior: "smooth", block: "start" });
 }
-function goToCard(id) {
-  const card = document.getElementById(`card`);
-  if (card) card.scrollIntoView({ behavior: "smooth", block: "start" });
+function goToAni(id) {
+  const ani = document.getElementById(`ani`);
+  if (ani) ani.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 </script>

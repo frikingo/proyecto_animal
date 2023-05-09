@@ -32,23 +32,31 @@
         </div>
       </div>
     </footer>
-
     <footer class="col-xs-10 col-sm-3 col-md-3 col-lg-3 q-pt-lg">
       <div>
         <div>
           <p>
-            <span style="font-weight: bolder">Contactenos</span>
+            <span style="font-weight: bolder">Enlace</span>
           </p>
         </div>
         <p>
-          <span style="font-weight: bolder; color: gray">Inicio</span>
+          <span style="font-weight: bolder; color: gray; cursor: pointer"
+            >Inicio</span
+          >
         </p>
         <p>
-          <span style="font-weight: bolder; color: gray">Sobre Nosotros</span>
+          <span style="font-weight: bolder; color: gray; cursor: pointer"
+            >Sobre Nosotros</span
+          >
         </p>
         <p>
-          <span style="font-weight: bolder; color: gray"
+          <span style="font-weight: bolder; color: gray; cursor: pointer"
             >Lista de Animales</span
+          >
+        </p>
+        <p>
+          <span style="font-weight: bolder; color: gray; cursor: pointer"
+            >Contctanos</span
           >
         </p>
       </div>
@@ -86,9 +94,6 @@
 <style>
 .espacio {
   padding-left: 5px;
-  cursor: pointer;
-}
-p {
   cursor: pointer;
 }
 </style>
