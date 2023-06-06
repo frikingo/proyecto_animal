@@ -51,9 +51,7 @@
               icon="call"
             ></q-btn>
             <q-card-section>
-              <section class="text-h6">
-                Reportar algun animal en peligro
-              </section>
+              <section class="text-h6">Reportar animal en peligro</section>
             </q-card-section>
             <q-card-section class="q-pt-none">
               ak va un texto random de varias lineas sobres los animales , son

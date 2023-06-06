@@ -1,0 +1,44 @@
+<template>
+  <q-table
+    class="q-mt-md"
+    title="Productos"
+    no-data-label="sin productos para mostrar"
+    :columns="columns"
+    :rows="rows"
+  />
+</template>
+
+<script>
+const columns = [
+  {
+    name: "producto",
+    label: "Producto",
+    align: "left",
+    field: "producto",
+    sortable: true,
+  },
+  {
+    name: "prioridad",
+    label: "Prioridad",
+    align: "left",
+    field: "prioridad",
+    sortable: true,
+  },
+];
+
+const rows = [
+  {
+    producto: "producto 1",
+    prioridad: "maxima",
+  },
+];
+
+export default {
+  setup() {
+    return {
+      columns,
+      rows,
+    };
+  },
+};
+</script>
