@@ -4,7 +4,7 @@
     title="Productos"
     no-data-label="sin productos para mostrar"
     :columns="columns"
-    :rows="rows"
+    :rows="productos"
   />
 </template>
 
@@ -34,6 +34,10 @@ const rows = [
 ];
 
 export default {
+  props: {
+    productos: Array,
+  },
+
   setup() {
     return {
       columns,

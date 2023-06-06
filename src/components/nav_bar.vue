@@ -238,25 +238,28 @@ header.abajo button {
 </style>
 
 <script>
+import { ref } from "vue";
 export default {
   methods: {
     abrirComponente() {
       this.$router.push("/GalPage");
     },
+  },
+  mounted() {
+    const open = ref(false);
+    // Funcionamiento del menu hamburguesa
+    function closeNav() {
+      open.value = false;
+    }
 
-    mounted() {
-      const open = ref(false);
-      // Funcionamiento del menu hamburguesa
-      function closeNav() {
-        open.value = false;
-      }
-
-      function openNav() {
-        open.value = true;
-      }
-    },
+    function openNav() {
+      open.value = true;
+    }
   },
 };
+</script>
+
+<script setup>
 //efecto scroll que lo copiamos de alvaro(se agrega un evento que caundo se haga el scroll mayor que Y se aplique el css abajo)
 window.addEventListener("scroll", function () {
   var header = document.querySelector("header");

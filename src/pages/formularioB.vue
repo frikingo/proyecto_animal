@@ -48,11 +48,10 @@
         </div>
       </q-form>
 
-      <Pintar_tabla />
+      <Pintar_tabla :productos="productos" />
     </div>
   </div>
 </template>
-
 <script>
 import { ref } from "vue";
 import { useQuasar } from "quasar";
@@ -64,6 +63,9 @@ export default {
     const producto = ref(null);
     const seleccion = ref(null);
     const opciones = ["maxima", "moderada", "minima"];
+
+    const productos = ref([]);
+
     const procesarformulario = () => {
       console.log("me diste click");
       if (terminos.value === false) {
@@ -81,8 +83,17 @@ export default {
           message: "solicitud aceptada",
         });
         myform.value.resetValidation();
-        reset();
+
+        //     procesar datos
+        productos.value = [
+          ...productos.value,
+          {
+            producto: producto.value,
+            prioridad: seleccion.value,
+          },
+        ];
       }
+      reset();
     };
     const $q = useQuasar();
     const terminos = ref(false);
@@ -99,6 +110,7 @@ export default {
       terminos,
       reset,
       myform,
+      productos,
     };
   },
   components: { Pintar_tabla },
